@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+</head>
+
+<body><style>
+   #one{
+    background-color: rgb(14, 13, 13);
+    position: sticky;
+
+  }
+  #two{
+  color: aqua;
+  transition: background 1s ease-in-out 0s;
+ }
+ #one:hover{
+  background-color: rgb(41, 40, 40);
+ }
+ #two:hover{
+  background-color: rgb(9, 124, 139);
+ }
+ #three{
+  display: inline;
+ margin-left: 60%;
+}
+@media(max-width:991px){
+  #three{
+  display: flex;
+  margin-left: 0%;
+ 
+}#two{
+  color: rgb(29, 28, 28);
+  display: inline;
+ }
+ #one:hover{
+  background-color: rgb(12, 206, 240);
+ }
+ #two:hover{
+  background-color: rgb(9, 73, 211);
+ }
+
+
+} 
+ 
+
+</style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+        <div class="container-fluid" id="one">
+          <a class="navbar-brand" href="#"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRacBoH3hvRLrKqtF9uV87gDbwZ-84O2uUblA&s" height="70px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="#" id="two">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  id="two">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="two">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  id="two"
+               }> Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="dropdown" id="three">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Dropdown form
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+              </div>
+    </ul>
+  </div>
+    </ul>
+  </div>
+          </div>
+        </div>
+      </nav>
+</body>
+
+</html>
